@@ -645,7 +645,7 @@
                     <scale>1.4793</scale>
                 </marker>
                 <condition>
-                    <property>/controls/electric/battery-switch</property>
+                    <property>/controls/electric/dc-master</property>
                 </condition>
             </item>
 
