@@ -1383,8 +1383,8 @@
             </marker>
             <condition>
                 <and>
-                    <property>/controls/electric/engine/generator</property>
-                    <property>/controls/electric/engine[1]/generator</property>
+                    <property>/controls/electric/engine/generator-active</property>
+                    <property>/controls/electric/engine[1]/generator-active</property>
                 </and>
             </condition>
         </item>
@@ -2739,10 +2739,10 @@
                 <condition>
                     <and>
                         <not>
-                            <property>/controls/electric/engine/generator</property>
+                            <property>/controls/electric/engine/generator-active</property>
                         </not>
                         <not>
-                            <property>/controls/electric/engine[1]/generator</property>
+                            <property>/controls/electric/engine[1]/generator-active</property>
                         </not>
                     </and>
                 </condition>
