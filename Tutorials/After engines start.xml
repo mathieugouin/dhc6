@@ -139,30 +139,20 @@
             <message>To provide the aircraft with power from the engines, you have to turn on the generators</message>
             <condition>
                 <or>
-                    <and>
-                        <not>
-                            <property>/controls/electric/engine/generator</property>
-                        </not>
-                        <not>
-                            <property>/controls/electric/engine[1]/generator</property>
-                        </not>
-                    </and>
-                    <or>
-                        <not>
-                            <property>/controls/electric/engine/generator</property>
-                        </not>
-                        <not>
-                            <property>/controls/electric/engine[1]/generator</property>
-                        </not>
-                    </or>
+                    <not>
+                        <property>/controls/electric/engine/generator-active</property>
+                    </not>
+                    <not>
+                        <property>/controls/electric/engine[1]/generator-active</property>
+                    </not>
                 </or>
             </condition>
         </error>
         <exit>
             <condition>
                 <and>
-                    <property>/controls/electric/engine/generator</property>
-                    <property>/controls/electric/engine[1]/generator</property>
+                    <property>/controls/electric/engine/generator-active</property>
+                    <property>/controls/electric/engine[1]/generator-active</property>
                 </and>
             </condition>
         </exit>
