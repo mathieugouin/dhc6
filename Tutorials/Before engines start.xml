@@ -84,23 +84,23 @@
         <error>
             <message>Set the left fuel switch to the NORMAL position</message>
             <condition>
-                    <property>/controls/engines/engine/cutoff</property>
+                    <property>/controls/engines/engine/emerg-cutoff</property>
             </condition>
         </error>
         <error>
             <message>Set the right fuel switch to the NORMAL position</message>
             <condition>
-                    <property>/controls/engines/engine[1]/cutoff</property>
+                    <property>/controls/engines/engine[1]/emerg-cutoff</property>
             </condition>
         </error>
         <exit>
             <condition>
                 <and>
                     <not>
-                        <property>/controls/engines/engine/cutoff</property>
+                        <property>/controls/engines/engine/emerg-cutoff</property>
                     </not>
                     <not>
-                        <property>/controls/engines/engine[1]/cutoff</property>
+                        <property>/controls/engines/engine[1]/emerg-cutoff</property>
                     </not>
                 </and>
             </condition>
@@ -1581,11 +1581,11 @@
                 <and>
                     <property>/controls/fuel/ind-test</property>
                     <less-than>
-                        <property>/consumables/fuel/tank[0]/indicated-level-lbs</property>
+                        <property>/instrumentation/engine-instruments/fuel-qty-fwd/indicated-fuelqty-lbs</property>
                         <value>10</value>
                     </less-than>
                     <less-than>
-                        <property>/consumables/fuel/tank[1]/indicated-level-lbs</property>
+                        <property>/instrumentation/engine-instruments/fuel-qty-aft/indicated-fuelqty-lbs</property>
                         <value>10</value>
                     </less-than>
                 </and>
