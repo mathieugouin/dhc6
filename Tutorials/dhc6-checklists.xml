@@ -457,10 +457,10 @@
                 <condition>
                     <and>
                         <not>
-                            <property>/controls/electric/engine/generator</property>
+                            <property>/controls/electric/engine/generator-active</property>
                         </not>
                         <not>
-                            <property>/controls/electric/engine[1]/generator</property>
+                            <property>/controls/electric/engine[1]/generator-active</property>
                         </not>
                     </and>
                 </condition>
@@ -902,7 +902,7 @@
                 </marker>
                 <condition>
                     <less-than>
-                        <property>/consumables/fuel/tank[0]/indicated-level-lbs</property>
+                        <property>/instrumentation/engine-instruments/fuel-qty-fwd/indicated-fuelqty-lbs</property>
                         <value>10</value>
                     </less-than>
                 </condition>
@@ -919,7 +919,7 @@
                 </marker>
                 <condition>
                     <less-than>
-                        <property>/consumables/fuel/tank[1]/indicated-level-lbs</property>
+                        <property>/instrumentation/engine-instruments/fuel-qty-aft/indicated-fuelqty-lbs</property>
                         <value>10</value>
                     </less-than>
                 </condition>
@@ -975,11 +975,11 @@
                 <condition>
                     <and>
                         <greater-than>
-                            <property>/consumables/fuel/tank[0]/indicated-level-lbs</property>
+                            <property>/instrumentation/engine-instruments/fuel-qty-fwd/indicated-fuelqty-lbs</property>
                             <value>10</value>
                         </greater-than>
                         <greater-than>
-                            <property>/consumables/fuel/tank[1]/indicated-level-lbs</property>
+                            <property>/instrumentation/engine-instruments/fuel-qty-aft/indicated-fuelqty-lbs</property>
                             <value>10</value>
                         </greater-than>
                     </and>
