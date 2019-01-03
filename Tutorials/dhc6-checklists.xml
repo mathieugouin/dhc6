@@ -239,10 +239,10 @@
                 <condition>
                     <and>
                         <not>
-                            <property>/controls/engines/engine/cutoff</property>
+                            <property>/controls/engines/engine/emerg-cutoff</property>
                         </not>
                         <not>
-                            <property>/controls/engines/engine[1]/cutoff</property>
+                            <property>/controls/engines/engine[1]/emerg-cutoff</property>
                         </not>
                     </and>
                 </condition>
