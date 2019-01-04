@@ -1139,7 +1139,7 @@ Right_28V_DC_bus = func(dt) {
     # Right audio (not yet simulated)
 
     # Right COM
-    if (getprop("controls/electric/circuit-breakers/center/lh-com1") and getprop("instrumentation/comm[0]/serviceable") and getprop("controls/electric/master-avionics")) {
+    if (getprop("controls/electric/circuit-breakers/center/lh-com1") and getprop("instrumentation/comm[1]/serviceable") and getprop("controls/electric/master-avionics")) {
         setprop(outPut~"comm[1]", bus_volts);
         load += bus_volts / 50;
     } else {
@@ -1147,7 +1147,7 @@ Right_28V_DC_bus = func(dt) {
     }
 
     # Right NAV
-    if (getprop("controls/electric/circuit-breakers/center/lh-nav1") and getprop("instrumentation/nav[0]/serviceable") and getprop("controls/electric/master-avionics")) {
+    if (getprop("controls/electric/circuit-breakers/center/lh-nav1") and getprop("instrumentation/nav[1]/serviceable") and getprop("controls/electric/master-avionics")) {
         setprop(outPut~"nav[1]", bus_volts);
         load += bus_volts / 50;
     } else {
