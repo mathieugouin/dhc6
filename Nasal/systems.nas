@@ -792,15 +792,15 @@ var close_reverse_info = func {
 #setlistener("/controls/engines/engine[0]/reverser", reverse_chg);
 #setlistener("/controls/engines/engine[1]/reverser", reverse_chg);
 
-#controls.applyParkingBrake = func (v) {
-#    if (!v) {
-#        return;
-#    }
-#
-#    var p = "/controls/gear/parkingbrake-lever";
-#    setprop(p, var i = !getprop(p));
-#    return i;
-#};
+controls.applyParkingBrake = func (v) {
+    if (!v) {
+        return;
+    }
+
+    var p = "/controls/gear/parkingbrake-lever";
+    setprop(p, var i = !getprop(p));
+    return i;
+};
 
 controls.flapsDown = func(step) {
     if(step == 0) return;
