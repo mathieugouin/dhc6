@@ -571,8 +571,8 @@
         <hovered>
             <binding>
                 <command>set-tooltip</command>
-                <tooltip-id>freq1.knob</tooltip-id>
-                <label>COM1 stb: %g</label>
+                <tooltip-id>freq2.knob</tooltip-id>
+                <label>COM2 stb: %g</label>
                 <property>instrumentation/comm[1]/frequencies/standby-mhz</property>
             </binding>
         </hovered>
@@ -615,8 +615,8 @@
         <hovered>
             <binding>
                 <command>set-tooltip</command>
-                <tooltip-id>freq1.knob</tooltip-id>
-                <label>COM1 stb: %g</label>
+                <tooltip-id>freq2.knob</tooltip-id>
+                <label>COM2 stb: %g</label>
                 <property>instrumentation/comm[1]/frequencies/standby-mhz</property>
             </binding>
         </hovered>
