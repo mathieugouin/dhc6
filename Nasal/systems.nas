@@ -793,8 +793,6 @@ var close_reverse_info = func {
 #setlistener("/controls/engines/engine[1]/reverser", reverse_chg);
 
 controls.applyParkingBrake = func (v) {
-    print("TBD: applyParkingBrake() called");
-
     if (!v) {
         return;
     }
